@@ -1,0 +1,121 @@
+<!--
+   
+Requirements:-
+
+1. Create a new website using HTML and Bootstrap. 
+2. The website must include the following:
+3. At least 2 pages.
+4. A Bootstrap navbar, table, and form.
+5. Bootstrap grid used throughout to format elements.
+6. Elements should stack vertically when the window is small.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndDevelopement</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+    <!-- Bootstrap Grid Layout for columns to stack vertically when the screen size is small -->
+
+    <div class="container justify-content-center mt-5">
+        <div class="row fluid">
+            <div class="col">
+                <h1 class="fluid text-center text-primary mt-2 bold">Front End Development</h1>
+                <h4 class="fluid text-center text-success mt-2 italic">All about designing Web Pages.</h4>
+            </div>
+        </div>
+
+
+    <!--  Here a navbar is created with a form that has 2 buttons that let us navigate to the 2 pages of the website -->
+
+    <nav class="navbar mt-4 mb-3 bg-body-tertiary" role="navigation">
+        <form class="container-fluid justify-content-start">
+            <a class="btn btn-lg btn-outline-secondary  me-2" role="button" type="button" href="./index.html">Home</a>
+            <a class="btn btn-lg btn-outline-secondary " role="button" type = "button" href="./contact-us.html">Contact Us</a>
+        </form>
+    </nav>
+
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-10">
+                <div class="card" style=" height:33rem">
+                    <img 
+                    src="https://s3.amazonaws.com/tf-nightingale/2022/12/html1.jpg" 
+                    class="card-img-top" 
+                    alt="Image 1"
+                    width="18rem"
+                    height="350rem"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <div class="card-text">The structure of websites is created through HTML.</div>
+                        <a href="#" class="btn btn-primary">Learn HTML</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-10">
+                <div class="card" style="height:33rem">
+                    <img 
+                    src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" 
+                    class="card-img-top" 
+                    alt="Image 2"
+                    width="18rem"
+                    height="350rem"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <div class="card-text">CSS is a language used for specifying the presentation and styling of a document written in HTML.</div>
+                        <a href="#" class="btn btn-primary">Learn CSS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-10">
+                <div class="card" style="height:33rem">
+                    <img 
+                    src="https://epss.ucla.edu/static/bootstrap-5.2.0/site/static/docs/5.2/assets/brand/bootstrap-social-logo.png" 
+                    class="card-img-top"
+                     alt="Image 3"
+                     width="18rem"
+                     height="350rem"
+                     />
+                    <div class="card-body">
+                        <h5 class="card-title">BootStrap</h5>
+                        <div class="card-text">Bootstrap is a CSS framework directed at responsive, mobile-first front-end web development.</div>
+                        <a href="#" class="btn btn-primary">Learn Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-10">
+                <div class="card" style=" height:33rem">
+                    <img 
+                    src="https://www.w3schools.com/whatis/img_js.png" 
+                    class="card-img-top" a
+                    lt="Image 4"
+                    width="18rem"
+                    height="350rem"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <div class="card-text">JavaScript is the Programming Language for the Web.</div>
+                        <a href="#" class="btn btn-primary">Learn JavaScript</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"> </script>
+
+</body>
+
+</html>
